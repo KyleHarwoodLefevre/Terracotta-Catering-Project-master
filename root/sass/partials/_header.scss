@@ -1,0 +1,13 @@
+body {
+    header{
+        width: 100%;
+    }
+}
+.topBannerBox {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 1px blue;
+}
