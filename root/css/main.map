@@ -1,0 +1,28 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../sass/main.scss",
+		"../sass/_variables.scss",
+		"../sass/_header.scss",
+		"../sass/_about_us.scss",
+		"../sass/_home.scss",
+		"../sass/_services.scss",
+		"../sass/_testimonials.scss",
+		"../sass/_book_now.scss",
+		"../sass/_footer.scss"
+	],
+	"sourcesContent": [
+		"@import '_variables.scss';\r\n@import '_header.scss';\r\n@import '_about_us.scss';\r\n@import '_home.scss';\r\n@import '_services.scss';\r\n@import '_testimonials.scss';\r\n@import '_book_now.scss';\r\n@import '_footer.scss';\r\n",
+		".mainFont {font-family: 'Montserrat', sans-serif;} // The font we will use throughout the page\r\n.terraFont {font-family: 'Qwigley', cursive;}",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	"names": [],
+	"mappings": ";ACAA,AAAA,SAAS,CAAC;EAAC,WAAW,EAAE,wBAAwB;CAAG;;;AACnD,AAAA,UAAU,CAAC;EAAC,WAAW,EAAE,kBAAkB;CAAG"
+}
