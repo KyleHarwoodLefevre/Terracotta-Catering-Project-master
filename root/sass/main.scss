@@ -1,9 +1,8 @@
-@import "partials/variables", 
-        "partials/header", 
-        "partials/about_us", 
-        "partials/home", 
-        "partials/book_now", 
-        "partials/services", 
-        "partials/testimonials", 
-        "partials/footer";
-
+@import 'partials/_variables';
+@import 'partials/_header';
+@import 'partials/_about_us';
+@import 'partials/_book_now';
+@import 'partials/_services';
+@import 'partials/_home';
+@import 'partials/_testimonials';
+@import 'partials/_footer';
