@@ -1,9 +1,13 @@
 .mainFont {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .terraFont {
-  font-family: 'Qwigley', cursive;
+  font-family: "Qwigley", cursive;
+}
+
+html {
+  margin: 0px;
 }
 
 body header {
@@ -12,9 +16,114 @@ body header {
 
 .topBannerBox {
   width: 100%;
-  height: 500px;
+  height: 450px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: solid 1px blue;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.45)), url("../../../root/img/bannerImage.jpg");
+  background-size: cover;
+  margin: 0px;
 }
+
+.logoBox {
+  margin-left: 8%;
+}
+.logoBox .terracotta {
+  margin-bottom: -10px;
+  font-size: 2.45em;
+  color: #9c423b;
+}
+.logoBox .catering {
+  margin-top: 0px;
+  margin-left: 2px;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.bookSide {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-right: 8%;
+  text-align: right;
+  justify-content: right;
+  width: 400px;
+}
+.bookSide .mailNumber {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 0px;
+  width: 100%;
+}
+.bookSide .mailNumber h5 {
+  font-weight: 200;
+  font-size: 0.85em;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+}
+.bookSide .bannerDescript h2 {
+  font-size: 2.65em;
+  letter-spacing: 1.75px;
+  font-weight: 400;
+}
+.bookSide .bannerDescript .bannerDivider {
+  margin-right: 0px;
+  width: 30%;
+  height: 0.5px;
+  background-color: white;
+}
+.bookSide .bannerDescript h3 {
+  letter-spacing: 1.45px;
+  font-weight: 300;
+}
+.bookSide .bannerBookBtn {
+  width: 170px;
+  height: 40px;
+  background-color: #9c423b;
+  border: none;
+  color: white;
+  margin-right: 0px;
+  margin-top: 5px;
+}
+.bookSide .bannerBookBtn h3 {
+  margin: 0px;
+  font-size: 1.25em;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+}
+.bookSide .bannerBookBtn:hover {
+  background-color: #9c5d59;
+}
+
+.navigationBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 8%;
+  background-color: #9c423b;
+  /* Visited link    */
+  /* Selected link   */
+}
+.navigationBar .navItem {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navigationBar .navItem h2 {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+.navigationBar .navItem:hover {
+  background-color: #9c5d59;
+}
+.navigationBar .navItem a:hover {
+  color: #9c5d59;
+}
+.navigationBar .navItem a:visited {
+  color: #9c423b;
+}
+.navigationBar .navItem a:active {
+  color: #9c423b;
+}
+/*# sourceMappingURL=main.css.map */
