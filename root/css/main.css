@@ -126,4 +126,143 @@ body header {
 .navigationBar .navItem a:active {
   color: #9c423b;
 }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footerBookBanner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #404040;
+  color: white;
+  align-items: center;
+  padding: 20px 10% 20px 10%;
+}
+.footerBookBanner h4 {
+  font-weight: 300;
+  padding-right: 30px;
+}
+.footerBookBanner .footerBookBtn {
+  color: #9c423b;
+  background-color: white;
+  border: none;
+  padding: 6.5px 0px 6.5px 0px;
+  letter-spacing: 0.1em;
+  width: 150px;
+}
+
+.mainFooter {
+  display: flex;
+  flex-direction: column;
+  background-color: #9c423b;
+  color: white;
+}
+
+.footerColumns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0px 50px;
+}
+.footerColumns .footerContactUs {
+  padding: 10px;
+}
+.footerColumns .footerContactUs h3 {
+  font-weight: 400;
+}
+.footerColumns .footerContactUs hr {
+  width: 100px;
+  margin-left: 0;
+}
+.footerColumns .footerContactUs ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  line-height: 1.2em;
+}
+.footerColumns .footerContactUs ul li {
+  font-size: 0.8em;
+}
+.footerColumns .footerSections {
+  padding: 10px;
+}
+.footerColumns .footerSections h3 {
+  font-weight: 400;
+}
+.footerColumns .footerSections hr {
+  width: 100px;
+  margin-left: 0;
+}
+.footerColumns .footerSections ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  line-height: 1.44em;
+}
+.footerColumns .footerSections ul li {
+  font-size: 0.8em;
+}
+.footerColumns .footerSections ul a {
+  text-decoration: none;
+  color: white;
+}
+.footerColumns .footerSections ul a:hover {
+  text-decoration: underline;
+  color: white;
+}
+.footerColumns .footerSections ul a:visited {
+  text-decoration: none;
+  color: white;
+}
+.footerColumns .footerFollowUs {
+  padding: 10px;
+}
+.footerColumns .footerFollowUs h3 {
+  font-weight: 400;
+}
+.footerColumns .footerFollowUs hr {
+  width: 100px;
+  margin-left: 0;
+}
+.footerColumns .footerFollowUs ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  line-height: 1.5em;
+}
+.footerColumns .footerFollowUs ul li {
+  font-size: 0.8em;
+}
+
+.smallPrint {
+  text-align: center;
+  font-size: 0.7em;
+  padding: 30px 0px 15px 0px;
+  letter-spacing: 1.5px;
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .footerBookBanner {
+    flex-direction: column;
+  }
+  .footerBookBanner h4 {
+    padding-right: 0px;
+  }
+}
+@media all and (max-width: 480px) {
+  .footerBookBanner {
+    flex-direction: column;
+  }
+  .footerBookBanner h4 {
+    padding-right: 0px;
+    text-align: center;
+  }
+
+  .footerColumns {
+    flex-wrap: wrap;
+  }
+}
 /*# sourceMappingURL=main.css.map */
