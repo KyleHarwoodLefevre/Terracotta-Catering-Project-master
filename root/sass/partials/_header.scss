@@ -1,7 +1,5 @@
-html {
-    margin: 0px;
-}
 body {
+    margin: 0px;
     header{
         width: 100%;
     }
@@ -15,7 +13,8 @@ body {
     background-image:linear-gradient(to right, rgba(255,0,0,0), rgba(0,0,0,.45)), url("../../../root/img/bannerImage.jpg");
 
     background-size: cover;
-    margin: 0px;
+    left: 0px;
+    top: 0;
 }
 .logoBox {
     margin-left: 8%;
