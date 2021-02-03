@@ -1,0 +1,474 @@
+.servicesText{
+    padding: 40px 8% 50px 8%;
+    h1{
+        color: #9c423b;
+        font-weight: 500;
+        font-size: 1.8em;
+    }
+    p{
+        font-size: 1.1em;
+        text-align: center;
+    }
+}
+.servicesCorpSect{
+    padding: 0px 0% 0px 4%;
+    background-color:#9c423b;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    .corpTextSide{
+        width: 50%;
+        padding: 0px 4% 0px 0px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            color: white;
+            font-weight: 500;
+            font-size: 1.6em;
+            text-align: center;
+        }
+        .corpDivider {
+            width: 200px;
+            height: 1px;
+            background-color: white;
+            border: none;
+            text-align: center;
+        }
+        p{
+            font-size: 1.2em;
+            color: white;
+            text-align: center;
+        }
+        a{
+            text-align: center;
+        }
+        .corpButton{
+            margin: 15px 0px 25px 0px;
+            padding: 10px;
+            color: #9c423b;
+            background-color:white;
+            border: none;
+            font-weight: 600;
+            letter-spacing: .1em;
+            width: 200px;
+        }
+    }
+    .corpImgSide{
+        background-image: linear-gradient(to left, rgba(245, 246, 252, 0), rgba(156, 66, 59, 1)), url("/root/img/services_Corporate.jpg");
+        background-size: cover;
+        width: 50%;
+    }
+}
+.servicesWeddSect{
+    padding: 0px 4% 0px 0%;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    .weddTextSide{
+        width: 45%;
+        padding: 0px 0px 0px 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            color: #9c423b;
+            font-weight: 500;
+            font-size: 1.6em;
+            text-align: center;
+        }
+        .weddDivider {
+            width: 200px;
+            height: 1px;
+            background-color: #272727;
+            border: none;
+            text-align: center;
+        }
+        p{
+            font-size: 1.2em;
+            text-align: center;
+        }
+        a{
+            text-align: center;
+        }
+        .weddButton{
+            margin: 15px auto 25px auto;
+            padding: 10px;
+            color: white;
+            background-color:#9c423b;
+            border: none;
+            font-weight: 600;
+            letter-spacing: .1em;
+            width: 250px;
+            text-align: center;
+        }
+    }
+    .weddImgSide{
+        background-image: linear-gradient(to right, rgba(245, 246, 252, 0), rgba(255, 255, 255, 1)), url("/root/img/services_Wedding.jpg");
+        background-size: cover;
+        width: 55%;
+    }
+}
+.servicesEventSect{
+    padding: 0px 0% 0px 4%;
+    background-color: #404040;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 100px 0px;
+    height: 500px;
+    .eventTextSide{
+        width: 45%;
+        padding: 0px 8% 0px 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            color: white;
+            font-weight: 500;
+            font-size: 1.6em;
+            text-align: center;
+        }
+        .eventDivider {
+            width: 200px;
+            height: 1px;
+            background-color:white;
+            border: none;
+            text-align: center;
+        }
+        p{
+            font-size: 1.2em;
+            color: white;
+            text-align: center;
+        }
+        a{
+            text-align: center;
+        }
+        .eventButton{
+            margin: 15px 0px 25px 0px;
+            padding: 10px;
+            color: #9c423b;
+            background-color: white;
+            border: none;
+            font-weight: 600;
+            letter-spacing: .1em;
+            width: 200px;
+        }
+    }
+    .eventImgSide{
+        background-image: linear-gradient(to left, rgba(245, 246, 252, 0), rgba(64, 64, 64, 1)), url("/root/img/services_Events.jpg");
+        background-size: cover;
+        width: 55%;
+    }
+}
+.toTopButton{
+    margin-bottom: 50px;
+    margin-left: 10%;
+    padding: 10px;
+    color: white;
+    background-color:#9c423b;
+    border: none;
+    font-weight: 600;
+    letter-spacing: .1em;
+    width: 150px;
+    
+    }
+//Media Queries
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .servicesText{
+        padding: 40px 8% 50px 8%;
+        h1{
+            color: #9c423b;
+            font-weight: 500;
+            font-size: 1.8em;
+            text-align: center;
+        }
+    }
+    .servicesCorpSect{
+        padding: 0px 4% 0px 4%;
+        background-color:#9c423b;
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        .corpTextSide{
+            width: 100%;
+            padding: 0px 8% 0px 8%; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                color: white;
+                font-weight: 500;
+                font-size: 1.6em;
+                text-align: center;
+            }
+            .corpDivider {
+                width: 150px;
+                height: 1px;
+                background-color: white;
+                border: none;
+                text-align: center;
+            }
+            p{
+                font-size: 1.2em;
+                color: white;
+                text-align: center;
+            }
+            a{
+                text-align: center;
+            }
+            .corpButton{
+                margin: 15px 0px 25px 0px;
+                padding: 10px;
+                color: #9c423b;
+                background-color:white;
+                border: none;
+                font-weight: 600;
+                letter-spacing: .1em;
+                width: 200px;
+            }
+        }
+        .corpImgSide{
+            display: none;
+        }
+    }
+    .servicesWeddSect{
+        padding: 0px 4% 0px 4%;
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        .weddTextSide{
+            width: 100%;
+            padding: 0px 8% 0px 8%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                color: #9c423b;
+                font-weight: 500;
+                font-size: 1.6em;
+                text-align: center;
+            }
+            .weddDivider {
+                width: 150px;
+                height: 1px;
+                background-color: #272727;
+                border: none;
+                text-align: center;
+            }
+            p{
+                font-size: 1.2em;
+                text-align: center;
+            }
+            a{
+                text-align: center;
+            }
+            .weddButton{
+                margin: 15px auto 25px auto;
+                padding: 10px;
+                color: white;
+                background-color:#9c423b;
+                border: none;
+                font-weight: 600;
+                letter-spacing: .1em;
+                width: 250px;
+                text-align: center;
+            }
+        }
+        .weddImgSide{
+            display: none;
+        }
+    }
+    .servicesEventSect{
+        padding: 0px 4% 0px 4%;
+        height: 500px;
+        .eventTextSide{
+            width: 100%;
+            padding: 0px 8% 0px 8%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                color: white;
+                font-weight: 500;
+                font-size: 1.6em;
+                text-align: center;
+            }
+            .eventDivider {
+                width: 150px;
+            }
+            p{
+                font-size: 1.2em;
+            }
+            a{
+                text-align: center;
+            }
+            .eventButton{
+                margin: 15px 0px 25px 0px;
+                padding: 10px;
+                color: #9c423b;
+                background-color: white;
+                border: none;
+                font-weight: 600;
+                letter-spacing: .1em;
+                width: 200px;
+            }
+        }
+        .eventImgSide{
+            display: none;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .servicesText{
+        padding: 40px 8% 50px 8%;
+        h1{
+            color: #9c423b;
+            font-weight: 500;
+            font-size: 1.8em;
+            text-align: center;
+        }
+    }
+    .servicesCorpSect{
+        padding: 0px 4% 0px 4%;
+        background-color:#9c423b;
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        .corpTextSide{
+            width: 100%;
+            padding: 0px 8% 0px 8%; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                color: white;
+                font-weight: 500;
+                font-size: 1.6em;
+                text-align: center;
+            }
+            .corpDivider {
+                width: 150px;
+                height: 1px;
+                background-color: white;
+                border: none;
+                text-align: center;
+            }
+            p{
+                font-size: 1em;
+                color: white;
+                text-align: center;
+            }
+            a{
+                text-align: center;
+            }
+            .corpButton{
+                margin: 15px 0px 25px 0px;
+                padding: 10px;
+                color: #9c423b;
+                background-color:white;
+                border: none;
+                font-weight: 600;
+                letter-spacing: .1em;
+                width: 200px;
+            }
+        }
+        .corpImgSide{
+            display: none;
+        }
+    }
+    .servicesWeddSect{
+        padding: 0px 4% 0px 4%;
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        .weddTextSide{
+            width: 100%;
+            padding: 0px 8% 0px 8%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                color: #9c423b;
+                font-weight: 500;
+                font-size: 1.6em;
+                text-align: center;
+            }
+            .weddDivider {
+                width: 150px;
+                height: 1px;
+                background-color: #272727;
+                border: none;
+                text-align: center;
+            }
+            p{
+                font-size: 1em;
+                text-align: center;
+            }
+            a{
+                text-align: center;
+            }
+            .weddButton{
+                margin: 15px auto 25px auto;
+                padding: 10px;
+                color: white;
+                background-color:#9c423b;
+                border: none;
+                font-weight: 600;
+                letter-spacing: .1em;
+                width: 250px;
+                text-align: center;
+            }
+        }
+        .weddImgSide{
+            display: none;
+        }
+    }
+    .servicesEventSect{
+        padding: 0px 4% 0px 4%;
+        height: 500px;
+        .eventTextSide{
+            width: 100%;
+            padding: 0px 8% 0px 8%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                color: white;
+                font-weight: 500;
+                font-size: 1.6em;
+                text-align: center;
+            }
+            .eventDivider {
+                width: 150px;
+            }
+            p{
+                font-size: 1em;
+            }
+            a{
+                text-align: center;
+            }
+            .eventButton{
+                margin: 15px 0px 25px 0px;
+                padding: 10px;
+                color: #9c423b;
+                background-color: white;
+                border: none;
+                font-weight: 600;
+                letter-spacing: .1em;
+                width: 200px;
+            }
+        }
+        .eventImgSide{
+            display: none;
+        }
+    }
+}

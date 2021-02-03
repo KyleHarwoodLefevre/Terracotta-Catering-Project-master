@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Terracotta Catering</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../root/css/main.css">
     <!--================================== External Sources =============================================-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4900ec6f7f.js" crossorigin="anonymous"></script>
     <!--=================================================================================================-->
 </head>
 <body class="mainFont">
 <!--=========================== Header Section ========================================-->
-    <header>
+    <header><a id="to_Top"></a>
         <div class="topBannerBox">
             <div class="logoBox">
                 <h1 class="terracotta terraFont">Terracotta</h1>
@@ -44,54 +44,88 @@
     </header>
 <!--===================================================================================-->
 <!--=========================== Content Section ========================================-->
-
-<!--===================================================================================-->
-<!--=========================== Footer Section ========================================-->
-<footer>
-    <div class="footerBookBanner">
-        <div><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmLorem ipsum dolor sit amet, consectetur</h4></div>
-        <div><a href="../book_now.html"><button class="footerBookBtn">BOOK NOW</button></a></div>
-    </div>
-    <div class="mainFooter">
-        <div class="footerColumns">
-            <div class="footerContactUs">
-                <h3>CONTACT US</h3>
-                <hr class="footLineBreak">
-                <ul class="contactList">
-                    <li>16 Zobel Close</li>
-                    <li>Norwich</li>
-                    <li>Norfolk</li>
-                    <li>NR3 2BY</li>
-                    <br>
-                    <li>01235-862-894</li>
-                    <li>info@terrocotta.com</li>
-                </ul>
+    <main>
+        <div class="servicesText">
+            <h1>SERVICES</h1>
+            <hr class="weddDivider">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere dolor sit amet nulla ultrices aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque luctus lectus viverra, cursus lacus a, dignissim nibh. Aenean scelerisque lorem ac nisl imperdiet, at pretium nisl laoreet. Donec sagittis, lectus ut vestibulum efficitur, quam augue auctor dui, eu luctus mauris lorem eget dui.<br><br>Ut et purus neque. Sed non velit id ipsum condimentum aliquet feugiat quis erat. Nam id urna ac justo facilisis ornare. Nulla ullamcorper nibh quis enim condimentum gravida.</p>
+        </div>
+        <div class="servicesCorpSect">
+            <div class="corpTextSide">
+                <h2>CORPORATE</h2>
+                <hr class="corpDivider">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere dolor sit amet nulla ultrices aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque luctus lectus viverra, cursus lacus a, dignissim nibh. Aenean scelerisque lorem ac nisl imperdiet, at pretium nisl laoreet.</p>
+                <a href="book_now.html"><button class="corpButton">MAKE AN ENQUIRY</button></a>
             </div>
-            <div class="footerSections">
-                <h3>SECTIONS</h3>
-                <hr class="footLineBreak">
-                <ul class="sectionList">
-                    <li><a href="../about_us.html">About Us</a></li>
-                    <li><a href="#">Corperate</a></li>
-                    <li><a href="#">Weddings</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="../testimonials.html">Testimonials</a></li>
-                    <li><a href="#">Terms &amp; Conditions</a></li>
-                </ul>
-            </div>
-            <div class="footerFollowUs">
-                <h3>FOLLOW US</h3>
-                <hr class="footLineBreak">
-                <ul class="followList">
-                    <li><i class="fab fa-facebook-square"></i>&nbsp;Facebook</li>
-                    <li><i class="fab fa-twitter"></i>&nbsp;Twitter</li>
-                    <li><i class="fab fa-linkedin"></i>&nbsp;LinkedIn</li>
-                </ul>
+            <div class="corpImgSide"></div>
+        </div>
+        <div class="servicesWeddSect">
+            <div class="weddImgSide"><img></div>
+            <div class="weddTextSide">
+                <h2>WEDDINGS</h2>
+                <hr class="weddDivider">
+                <p>Donec sagittis, lectus ut vestibulum efficitur, quam augue auctor dui, eu luctus mauris lorem eget dui. Ut et purus neque. Sed non velit id ipsum condimentum aliquet feugiat quis erat. Nam id urna ac justo facilisis ornare. Nulla ullamcorper nibh quis enim condimentum gravida. Etiam eros ante, pulvinar ac bibendum sit amet, iaculis sit amet turpis.</p>
+                <a href="book_now.html"><button class="weddButton">BOOK FOR A WEDDING</button></a>
             </div>
         </div>
-        <div class="smallPrint">COPYRIGHT &copy; TERRACOTTA CATERING. ALL RIGHTS RESERVED 2019</div>
-    </div>
-</footer>
+        <div class="servicesEventSect">
+            <div class="eventTextSide">
+                <h2>EVENTS</h2>
+                <hr class="eventDivider">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin imperdiet nisi in molestie hendrerit. Proin vitae iaculis neque. Quisque dignissim dolor dui, et dapibus leo eleifend in. Aenean bibendum nec diam vitae lobortis. Suspendisse tristique laoreet mi congue placerat.</p>
+                <a href="book_now.html"><button class="eventButton">MAKE AN ENQUIRY</button></a>
+            </div>
+            <div class="eventImgSide"><img></div>
+        </div>
+        <a href="#to_Top"><button class="toTopButton">BACK TO TOP <i class="fas fa-arrow-up"></i></button></a>
+    </main>
+<!--===================================================================================-->
+<!--=========================== Footer Section ========================================-->
+    <footer>
+        <div class="footerBookBanner">
+            <div><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmLorem ipsum dolor sit amet, consectetur</h4></div>
+            <div><a href="../book_now.html"><button class="footerBookBtn">BOOK NOW</button></a></div>
+        </div>
+        <div class="mainFooter">
+            <div class="footerColumns">
+                <div class="footerContactUs">
+                    <h3>CONTACT US</h3>
+                    <hr class="footLineBreak">
+                    <ul class="contactList">
+                        <li>16 Zobel Close</li>
+                        <li>Norwich</li>
+                        <li>Norfolk</li>
+                        <li>NR3 2BY</li>
+                        <br>
+                        <li>01235-862-894</li>
+                        <li>info@terrocotta.com</li>
+                    </ul>
+                </div>
+                <div class="footerSections">
+                    <h3>SECTIONS</h3>
+                    <hr class="footLineBreak">
+                    <ul class="sectionList">
+                        <li><a href="../about_us.html">About Us</a></li>
+                        <li><a href="#">Corperate</a></li>
+                        <li><a href="#">Weddings</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="../testimonials.html">Testimonials</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footerFollowUs">
+                    <h3>FOLLOW US</h3>
+                    <hr class="footLineBreak">
+                    <ul class="followList">
+                        <li><i class="fab fa-facebook-square"></i>&nbsp;Facebook</li>
+                        <li><i class="fab fa-twitter"></i>&nbsp;Twitter</li>
+                        <li><i class="fab fa-linkedin"></i>&nbsp;LinkedIn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="smallPrint">COPYRIGHT &copy; TERRACOTTA CATERING. ALL RIGHTS RESERVED 2019</div>
+        </div>
+    </footer>
 <!--===================================================================================-->
 </body>
 </html>
