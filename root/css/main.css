@@ -601,6 +601,27 @@ body header {
     display: none;
   }
 }
+.testBox .revBox .revContent .profile .profilePic {
+  width: 200px;
+  height: 200px;
+}
+.testBox .revBox .revContent .profile .profile_1 {
+  background-size: cover;
+  background-image: url("../../img/testimonials_pp1.jpg");
+}
+.testBox .revBox .revContent .profile h2 {
+  font-size: 1em;
+}
+.testBox .revBox .revContent .profile h3 {
+  font-size: 1em;
+}
+.testBox .revBox .revQuote {
+  font-size: 1em;
+}
+.testBox .revBox .revDate {
+  font-size: 0.5em;
+}
+
 footer {
   left: 0;
   bottom: 0;

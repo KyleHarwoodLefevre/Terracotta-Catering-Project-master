@@ -1,3 +1,32 @@
+.testBox {
+    .revBox {
+        .revContent{
+            .profile {
+                .profilePic {
+                    width: 200px;
+                    height: 200px;
+
+                }
+                .profile_1 {
+                    background-size: cover;
+                    background-image: url("../../img/testimonials_pp1.jpg");
+                }
+                h2{
+                    font-size: 1em;
+                }
+                h3{
+                    font-size: 1em;
+                }
+            }
+        }
+        .revQuote {
+            font-size: 1em; 
+        }
+        .revDate{
+            font-size: 0.5em;
+        }
+    }
+}
 //Media Queries
 @media all and (min-width: 1024px) and (max-width: 1280px) {
 
