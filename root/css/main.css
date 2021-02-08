@@ -601,27 +601,144 @@ body header {
     display: none;
   }
 }
+.testTitle h1 {
+  font-size: 1.5em;
+  color: #9c423b;
+  margin: 10px 10px 0px 6%;
+  padding: 20px 20px 20px 20px;
+  width: 160px;
+  border-bottom: 5px solid #9c423b;
+}
+
+.testQuoteImage {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-image: linear-gradient(to bottom right, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)), url("/root/img/testimonials_quoteBackground.jpg");
+  background-size: cover;
+  border-bottom: 5px solid #9c423b;
+}
+.testQuoteImage .quoteQ {
+  font-size: 1.5em;
+  padding: 50px;
+  color: white;
+  text-shadow: black 1px 1px 3px;
+}
+.testQuoteImage .quoteP {
+  font-size: 1em;
+  color: white;
+}
+
+.testBox .revBox {
+  margin: 30px;
+}
+.testBox .revBox .revContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.testBox .revBox .revContent .profile {
+  width: 100px;
+  padding: 15px 15px 0px 15px;
+}
 .testBox .revBox .revContent .profile .profilePic {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0px 0px 5px 1px black;
 }
 .testBox .revBox .revContent .profile .profile_1 {
   background-size: cover;
-  background-image: url("../../img/testimonials_pp1.jpg");
+  background-image: url("/root/img/testimonials_pp1.jpg");
+}
+.testBox .revBox .revContent .profile .profile_2 {
+  background-size: cover;
+  background-image: url("/root/img/testimonials_pp2.jpg");
+}
+.testBox .revBox .revContent .profile .profile_3 {
+  background-size: cover;
+  background-image: url("/root/img/testimonials_pp3.jpg");
+}
+.testBox .revBox .revContent .profile .profile_4 {
+  background-size: cover;
+  background-image: url("/root/img/testimonials_pp5.jpg");
+}
+.testBox .revBox .revContent .profile .profile_5 {
+  background-size: cover;
+  background-image: url("/root/img/testimonials_pp4.jpg");
 }
 .testBox .revBox .revContent .profile h2 {
-  font-size: 1em;
+  color: #9c423b;
+  text-align: center;
+  font-size: 1.1em;
+  margin: 10px 0px 0px 0px;
 }
 .testBox .revBox .revContent .profile h3 {
-  font-size: 1em;
+  color: #9c423b;
+  text-align: center;
+  font-size: 0.9em;
+  margin: 0px 0px 0px 0px;
 }
 .testBox .revBox .revQuote {
   font-size: 1em;
+  padding: 40px 30px 40px 40px;
 }
 .testBox .revBox .revDate {
-  font-size: 0.5em;
+  font-size: 0.65em;
+  text-align: right;
+  padding-right: 10px;
+  color: #9c423b;
+}
+.testBox .revBox hr {
+  width: 90%;
 }
 
+.leaveReview {
+  margin-left: 8%;
+  margin-bottom: 50px;
+}
+.leaveReview h2 {
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #9c423b;
+}
+.leaveReview h3 {
+  font-size: 0.95em;
+  font-weight: 300;
+}
+.leaveReview button {
+  font-size: 1em;
+  background-color: #9c423b;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border: none;
+}
+
+@media all and (max-width: 480px) {
+  .testTitle h1 {
+    font-size: 1.5em;
+    color: #9c423b;
+    margin: 10px 10px 0px 0px;
+    padding: 20px 20px 20px 20px;
+    width: 160px;
+    border-bottom: 5px solid #9c423b;
+  }
+
+  .testQuoteImage .quoteQ {
+    font-size: 1.4em;
+    padding: 30px;
+    color: white;
+    text-shadow: black 1px 1px 3px;
+  }
+  .testQuoteImage .quoteP {
+    font-size: 1em;
+    color: white;
+  }
+}
 footer {
   left: 0;
   bottom: 0;
