@@ -601,6 +601,80 @@ body header {
     display: none;
   }
 }
+.mainFont {
+  font-family: "Montserrat", sans-serif;
+}
+
+.terraFont {
+  font-family: "Qwigley", cursive;
+}
+
+.heading_one {
+  color: #AF473C;
+  width: 80%;
+  margin: 0 auto;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+.heading_one h1 {
+  font-weight: 400;
+  text-underline-position: below;
+}
+
+.heading_one_contents {
+  width: 80%;
+  margin: 0 auto;
+}
+.heading_one_contents b {
+  color: #AF473C;
+}
+
+.service-cards {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.services_title {
+  color: #AF473C;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+.services_title h1 {
+  font-weight: 400;
+}
+.services_title span {
+  text-decoration: underline;
+}
+
+.services_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.services_container .service_card {
+  display: block;
+  border-radius: 3px;
+  text-align: center;
+  width: 100%;
+}
+.services_container .service_card h3 {
+  color: #AF473C;
+  position: relative;
+}
+.services_container .service_card img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .services_container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .services_container .service_card {
+    width: 32%;
+  }
+}
 .testBox .revBox .revContent .profile .profilePic {
   width: 200px;
   height: 200px;

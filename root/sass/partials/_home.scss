@@ -1,15 +1,95 @@
 @import "_variables";
 
-.heading_one{
+.heading_one {
   color: $base-colour;
+  width: 80%;
+  margin: 0 auto;
+  
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  h1{
+    font-weight: 400;
+    text-underline-position: below;
+  }
 }
+
+.heading_one_contents {
+  b {
+    color: $base-colour;
+  }
+  width: 80%;
+  margin: 0 auto;
+}
+
+//SERVICES
+.service-cards {
+  width: 80%;
+  margin: 0 auto;
+}
+.services_title {
+  color: $base-colour;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  h1{
+    font-weight: 400;
+  }
+  span{
+    text-decoration: underline;
+  }
+}
+.services_container {
+  display: flex;
+  //default layout for mobile
+  //one column
+  flex-direction: column;
+  width: 100%;
+
+  .service_card {
+    display: block;
+    border-radius: 3px;
+    text-align: center;
+    
+    //then in the MQ to set 3 hortizonal for larger screens
+    width: 100%;
+    
+
+    h3 {
+      color: $base-colour;
+      position: relative;
+      //underline needed
+    }
+
+    img{
+      width: 100%;
+      height: auto; //to be changed
+    }
+  }
+}
+//styling for larger screens
+  //mq for screen widths 768px and above
+@media screen and (min-width: 768px){
+  //larger screen layout 3 columns
+  .services_container {
+    flex-direction: row;
+    justify-content: space-between;
+    .service_card {
+      width: 32%;
+    }
+    img {
+      //specify height
+    }
+  }
+}
+
+//SERVICES END
+
 //Media Queries
 @media all and (min-width: 1024px) and (max-width: 1280px) {
-  
+
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
-
+  
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
@@ -17,7 +97,5 @@
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
-  body{
-    color: red;
-  }
+  
 }
