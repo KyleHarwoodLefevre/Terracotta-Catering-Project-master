@@ -609,21 +609,32 @@ body header {
   font-family: "Qwigley", cursive;
 }
 
-.heading_one {
-  color: #AF473C;
+.cfao {
   width: 80%;
   margin: 0 auto;
+  margin-top: 2em;
+}
+
+.sub-headings {
+  color: #AF473C;
   letter-spacing: 6px;
   text-transform: uppercase;
+  margin-bottom: 2em;
 }
-.heading_one h1 {
+.sub-headings h1 {
   font-weight: 400;
-  text-underline-position: below;
+}
+
+.underline {
+  display: block;
+  border-bottom: black 1px solid;
+  width: 200px;
 }
 
 .heading_one_contents {
-  width: 80%;
-  margin: 0 auto;
+  max-width: 1140px;
+  font-size: 1.1em;
+  font-weight: 400;
 }
 .heading_one_contents b {
   color: #AF473C;
@@ -631,19 +642,7 @@ body header {
 
 .service-cards {
   width: 80%;
-  margin: 0 auto;
-}
-
-.services_title {
-  color: #AF473C;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-}
-.services_title h1 {
-  font-weight: 400;
-}
-.services_title span {
-  text-decoration: underline;
+  margin: 2em auto;
 }
 
 .services_container {
@@ -656,23 +655,95 @@ body header {
   border-radius: 3px;
   text-align: center;
   width: 100%;
+  padding-bottom: 2em;
 }
 .services_container .service_card h3 {
   color: #AF473C;
   position: relative;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.4em;
+  letter-spacing: 4px;
+}
+.services_container .service_card p {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.services_container .service_card .underline {
+  display: block;
+  border-bottom: black 1px solid;
+  width: 100px;
+  margin: 0 auto;
 }
 .services_container .service_card img {
-  width: 100%;
+  width: 75%;
   height: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 1080px) {
   .services_container {
     flex-direction: row;
     justify-content: space-between;
   }
   .services_container .service_card {
-    width: 32%;
+    width: 31%;
+    padding-bottom: 0;
+  }
+  .services_container .service_card img {
+    width: 90%;
+    height: 180px;
+  }
+}
+.partners {
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+@media all and (min-width: 768px) {
+  .partners {
+    display: block;
+  }
+}
+
+.partner_imgs {
+  width: 95%;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.partner_imgs #quarr {
+  height: 140px;
+  width: auto;
+}
+.partner_imgs #pabulummm {
+  height: 50px;
+  width: auto;
+}
+.partner_imgs #mountjoy {
+  height: 110px;
+  width: auto;
+}
+
+@media all and (min-width: 900px) {
+  .partner_imgs {
+    width: 90%;
+  }
+  .partner_imgs #quarr {
+    height: 150px;
+  }
+  .partner_imgs #pabulummm {
+    height: 65px;
+  }
+  .partner_imgs #mountjoy {
+    height: 150px;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .heading_one {
+    font-size: 80%;
   }
 }
 .testBox .revBox .revContent .profile .profilePic {

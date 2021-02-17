@@ -1,45 +1,54 @@
 @import "_variables";
 
-.heading_one {
-  color: $base-colour;
+////
+////HEADING START
+////
+.cfao {
   width: 80%;
   margin: 0 auto;
-  
+  margin-top: 2em;
+}
+
+//used by all sub headings
+.sub-headings {
+  color: $base-colour;
   letter-spacing: 6px;
   text-transform: uppercase;
+  margin-bottom: 2em;
   h1{
     font-weight: 400;
-    text-underline-position: below;
   }
+}
+
+.underline{
+  display: block;
+  border-bottom: black 1px solid;
+  width: 200px;
 }
 
 .heading_one_contents {
   b {
     color: $base-colour;
   }
-  width: 80%;
-  margin: 0 auto;
+  max-width: 1140px;
+  font-size: 1.1em;
+  font-weight: 400;
 }
+/////
+////HEADING END
+////
 
-//SERVICES
+////
+////SERVICES
+////
 .service-cards {
   width: 80%;
-  margin: 0 auto;
+  margin: 2em auto;
 }
-.services_title {
-  color: $base-colour;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  h1{
-    font-weight: 400;
-  }
-  span{
-    text-decoration: underline;
-  }
-}
+
 .services_container {
   display: flex;
-  //default layout for mobile
+
   //one column
   flex-direction: column;
   width: 100%;
@@ -48,40 +57,123 @@
     display: block;
     border-radius: 3px;
     text-align: center;
-    
+    //default layout for mobile
     //then in the MQ to set 3 hortizonal for larger screens
     width: 100%;
-    
+    padding-bottom: 2em;
 
     h3 {
       color: $base-colour;
       position: relative;
-      //underline needed
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 1.4em;
+      letter-spacing: 4px;
+    }
+    p{
+      font-size: 1.1em;
+      font-weight: 400;
     }
 
+    .underline{
+      display: block;
+      border-bottom: black 1px solid;
+      width: 100px;
+      margin: 0 auto;
+    }
+    
     img{
-      width: 100%;
-      height: auto; //to be changed
+      width: 75%;
+      height: auto;
     }
   }
 }
+
 //styling for larger screens
-  //mq for screen widths 768px and above
-@media screen and (min-width: 768px){
+//mq for screen widths 1080px and above
+@media only screen and (min-width: 1080px) {
   //larger screen layout 3 columns
   .services_container {
     flex-direction: row;
     justify-content: space-between;
+    
     .service_card {
-      width: 32%;
-    }
-    img {
-      //specify height
+      width: 31%;
+      padding-bottom: 0;
+
+      img {
+        width: 90%;
+        height: 180px;
+      }
     }
   }
 }
 
-//SERVICES END
+
+////
+////SERVICES END
+////
+
+
+////
+////PARTNERS
+////
+
+//only display on screens > 768px
+//partner styling here
+.partners{
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2em;
+  @media all and (min-width: 768px) {
+    display: block;
+  }
+}
+.partner_imgs{
+  width: 95%;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  //Default sizes for sm screen sizes
+  //updated for larger in MQ
+  #quarr{
+    height: 140px;
+    width: auto;
+  }
+  #pabulummm{
+    height: 50px;
+    width: auto;
+  }
+  #mountjoy{
+    height: 110px;
+    width: auto;
+  } 
+}
+
+//Partner images size for larger screens
+@media all and (min-width: 900px) { 
+  .partner_imgs{
+    width: 90%;
+    #quarr{
+      height: 150px;
+    }
+    #pabulummm{
+      height: 65px;
+    }
+    #mountjoy{
+      height: 150px;
+    } 
+  }
+}
+
+////
+////PARTNERS END
+////
+
 
 //Media Queries
 @media all and (min-width: 1024px) and (max-width: 1280px) {
@@ -93,7 +185,9 @@
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
-
+  .heading_one{
+    font-size: 80%;
+  }
 }
 
 @media all and (min-width: 100px) and (max-width: 480px) {
