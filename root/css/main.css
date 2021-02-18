@@ -160,6 +160,77 @@ body header {
   }
 }
 
+.contactus-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sub-headings h2 {
+  font-weight: 400;
+}
+
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #404040;
+  margin-bottom: 3em;
+}
+@media all and (min-width: 920px) {
+  .contact-us-form {
+    flex-direction: row;
+  }
+  .contact-us-form .box {
+    width: 50%;
+    padding: 1em;
+  }
+}
+
+.box {
+  width: 100%;
+}
+.box label,
+.box input,
+.box textarea {
+  display: block;
+}
+.box input,
+.box textarea {
+  width: 96%;
+  margin-bottom: 1em;
+  outline: none;
+  border: none;
+  line-height: 50px;
+  background: #fafafa;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 0 2%;
+  font-size: 16px;
+  color: #666;
+  transition: all 0.4s ease;
+}
+.box label {
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.box input {
+  margin-top: 5px;
+  height: 30px;
+  text-shadow: #404040;
+  padding: 3px;
+}
+.box textarea {
+  height: 150px;
+  font-size: 24px;
+}
+.box input[type=checkbox] {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+.box .oneline {
+  display: inline-flex;
+}
+
 .servicesText {
   padding: 40px 8% 50px 8%;
 }
