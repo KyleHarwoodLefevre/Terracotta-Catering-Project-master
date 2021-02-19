@@ -1,3 +1,97 @@
+
+.contactus-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.sub-headings{
+    h2{
+        font-weight: 400;  
+    }
+}
+.contact-us-form{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #404040;
+    margin-bottom: 3em;
+
+    @media all and (min-width: 920px){
+        flex-direction: row;
+
+        .box {
+            width: 50%;
+            padding: 1em;
+        }
+    }
+    
+    //temp to see box sizes
+    //&>* {
+    //  border: solid 1px red;
+    //}
+}
+
+.box{
+    width: 100%;
+    
+    label,
+    input,
+    textarea {
+        display: block;
+        //put generic styling for all fields in here
+    }
+
+    input,
+    textarea {
+        width: 96%;
+        margin-bottom: 1em;
+
+        /////styling for input boxes
+        outline: none;
+        border: none;
+        line-height: 50px;
+        
+        background: #fafafa;
+        box-shadow: inset 0 1px 3px 0 rgb(0 0 0 / 8%);
+        border-radius: 5px;
+        padding: 0 2%;
+        font-size: 16px;
+        color: #666;
+        transition: all .4s ease;
+    }
+
+    //individual styling
+    label {
+        font-weight: 300;
+        letter-spacing: 1px;
+        
+        ////needs styling
+    }
+    input {
+        margin-top: 5px;
+        height: 30px;
+        text-shadow: #404040;
+        padding: 3px;    
+        //padding
+        //font-styling
+    }
+    textarea {
+        height: 150px;
+        font-size: 24px;
+        //text styling and size-
+    }
+
+    input[type="checkbox"] {
+        ////styling
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+
+    .oneline{
+        display: inline-flex;
+    }
+}
+
+
 //Media Queries
 @media all and (min-width: 1024px) and (max-width: 1280px) {
 
@@ -8,7 +102,7 @@
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
-    
+
 }
 
 @media all and (max-width: 480px) {

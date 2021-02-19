@@ -127,6 +127,110 @@ body header {
   color: #9c423b;
 }
 
+.about-us {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+
+.au-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3em 0 5em;
+}
+.au-content .para {
+  font-weight: 400;
+  font-size: 1.1em;
+  margin: 0;
+  padding-bottom: 2em;
+}
+.au-content img {
+  height: 190px;
+  width: auto;
+}
+@media all and (min-width: 1024px) {
+  .au-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .au-content .para {
+    padding: 0;
+    margin-right: 2em;
+  }
+}
+
+.contactus-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sub-headings h2 {
+  font-weight: 400;
+}
+
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #404040;
+  margin-bottom: 3em;
+}
+@media all and (min-width: 920px) {
+  .contact-us-form {
+    flex-direction: row;
+  }
+  .contact-us-form .box {
+    width: 50%;
+    padding: 1em;
+  }
+}
+
+.box {
+  width: 100%;
+}
+.box label,
+.box input,
+.box textarea {
+  display: block;
+}
+.box input,
+.box textarea {
+  width: 96%;
+  margin-bottom: 1em;
+  outline: none;
+  border: none;
+  line-height: 50px;
+  background: #fafafa;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 0 2%;
+  font-size: 16px;
+  color: #666;
+  transition: all 0.4s ease;
+}
+.box label {
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.box input {
+  margin-top: 5px;
+  height: 30px;
+  text-shadow: #404040;
+  padding: 3px;
+}
+.box textarea {
+  height: 150px;
+  font-size: 24px;
+}
+.box input[type=checkbox] {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+.box .oneline {
+  display: inline-flex;
+}
+
 .servicesText {
   padding: 40px 8% 50px 8%;
 }
@@ -601,6 +705,7 @@ body header {
     display: none;
   }
 }
+<<<<<<< HEAD
 .testTitle h1 {
   font-size: 1.5em;
   color: #9c423b;
@@ -643,6 +748,152 @@ body header {
 .testBox .revBox .revContent .profile {
   width: 100px;
   padding: 15px 15px 0px 15px;
+=======
+.mainFont {
+  font-family: "Montserrat", sans-serif;
+}
+
+.terraFont {
+  font-family: "Qwigley", cursive;
+}
+
+.cfao {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.sub-headings {
+  color: #AF473C;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+.sub-headings h1 {
+  font-weight: 400;
+}
+
+.underline {
+  display: block;
+  border-bottom: black 1px solid;
+  width: 200px;
+}
+
+.heading_one_contents {
+  max-width: 1140px;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.heading_one_contents b {
+  color: #AF473C;
+}
+
+.service-cards {
+  width: 80%;
+  margin: 2em auto;
+}
+
+.services_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.services_container .service_card {
+  display: block;
+  border-radius: 3px;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 2em;
+}
+.services_container .service_card h3 {
+  color: #AF473C;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.4em;
+  letter-spacing: 4px;
+}
+.services_container .service_card p {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.services_container .service_card .underline {
+  display: block;
+  border-bottom: black 1px solid;
+  width: 100px;
+  margin: 0 auto;
+}
+.services_container .service_card img {
+  width: 75%;
+  height: auto;
+}
+
+@media only screen and (min-width: 1080px) {
+  .services_container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .services_container .service_card {
+    width: 31%;
+    padding-bottom: 0;
+  }
+  .services_container .service_card img {
+    width: 90%;
+    height: 180px;
+  }
+}
+.partners {
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+@media all and (min-width: 768px) {
+  .partners {
+    display: block;
+  }
+}
+
+.partner_imgs {
+  width: 95%;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.partner_imgs #quarr {
+  height: 140px;
+  width: auto;
+}
+.partner_imgs #pabulummm {
+  height: 50px;
+  width: auto;
+}
+.partner_imgs #mountjoy {
+  height: 110px;
+  width: auto;
+}
+
+@media all and (min-width: 900px) {
+  .partner_imgs {
+    width: 90%;
+  }
+  .partner_imgs #quarr {
+    height: 150px;
+  }
+  .partner_imgs #pabulummm {
+    height: 65px;
+  }
+  .partner_imgs #mountjoy {
+    height: 150px;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .heading_one {
+    font-size: 80%;
+  }
+>>>>>>> f98a52858f7ee7109827cd9ad665f673351f1e06
 }
 .testBox .revBox .revContent .profile .profilePic {
   width: 100px;
