@@ -18,6 +18,18 @@ body {
 }
 .logoBox {
     margin-left: 8%;
+    a:link {
+        text-decoration: none;
+    }
+    a:visited {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    a:active {
+        text-decoration: none;
+    }
     .terracotta {
         margin-bottom: -10px;
         font-size: 2.45em;
@@ -28,6 +40,7 @@ body {
         margin-left: 2px;
         font-size: 1.25em;
         font-weight: 400;
+        color: black;
     }
 }
 .bookSide {
@@ -122,14 +135,91 @@ body {
 
 }
 
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 700px) and (max-width: 1024px) {
 
 }
 
-@media all and (min-width: 480px) and (max-width: 768px) {
-    
+@media all and (min-width: 510px) and (max-width: 700px) {
+.bookSide {
+    .mailNumber {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 0px;
+        width: 100%;
+        h5 {
+            font-size: .85em;
+        }
+    }
+    .bannerDescript {
+        h2 {
+            font-size: 1.3em;
+            margin-top: 30px;
+        }
+    }
+}
+    .navigationBar {
+        .navItem {
+            padding-left: 10px;
+            padding-right: 10px;
+            h2 {
+                font-size: 0.9em;
+            }
+        }
+    }
 }
 
-@media all and (max-width: 480px) {
-    
+@media all and (max-width: 510px) {
+    .bookSide {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-right: 8%;
+        text-align: right;
+        justify-content: right;
+        width: 400px;
+        .mailNumber {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-right: 0px;
+            width: 100%;
+            h5 {
+                font-size: .85em;
+            }
+        }
+        .bannerDescript {
+            h2 {
+                font-size: 1.5em;
+                margin-top: 30px;
+            }
+            .bannerDivider {
+                margin-right: 0px;
+                width: 30%;
+                height: 0.5px;
+                background-color: white;
+            }
+            h3{
+                letter-spacing: 1.45px;
+                font-weight: 300;
+            }
+        }
+        .bannerBookBtn {
+            h3{
+                font-size: 1.05em;
+            }
+        }
+    }
+    .navigationBar {
+        flex-direction: column;
+        padding: 0;
+        .navItem {
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            h2 {
+                font-size: 1em;
+            }
+        }
+    } 
 }

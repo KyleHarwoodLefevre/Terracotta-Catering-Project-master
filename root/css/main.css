@@ -28,6 +28,18 @@ body header {
 .logoBox {
   margin-left: 8%;
 }
+.logoBox a:link {
+  text-decoration: none;
+}
+.logoBox a:visited {
+  text-decoration: none;
+}
+.logoBox a:hover {
+  text-decoration: none;
+}
+.logoBox a:active {
+  text-decoration: none;
+}
 .logoBox .terracotta {
   margin-bottom: -10px;
   font-size: 2.45em;
@@ -38,6 +50,7 @@ body header {
   margin-left: 2px;
   font-size: 1.25em;
   font-weight: 400;
+  color: black;
 }
 
 .bookSide {
@@ -127,6 +140,81 @@ body header {
   color: #9c423b;
 }
 
+@media all and (min-width: 510px) and (max-width: 700px) {
+  .bookSide .mailNumber {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .bookSide .mailNumber h5 {
+    font-size: 0.85em;
+  }
+  .bookSide .bannerDescript h2 {
+    font-size: 1.3em;
+    margin-top: 30px;
+  }
+
+  .navigationBar .navItem {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .navigationBar .navItem h2 {
+    font-size: 0.9em;
+  }
+}
+@media all and (max-width: 510px) {
+  .bookSide {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-right: 8%;
+    text-align: right;
+    justify-content: right;
+    width: 400px;
+  }
+  .bookSide .mailNumber {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .bookSide .mailNumber h5 {
+    font-size: 0.85em;
+  }
+  .bookSide .bannerDescript h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+  }
+  .bookSide .bannerDescript .bannerDivider {
+    margin-right: 0px;
+    width: 30%;
+    height: 0.5px;
+    background-color: white;
+  }
+  .bookSide .bannerDescript h3 {
+    letter-spacing: 1.45px;
+    font-weight: 300;
+  }
+  .bookSide .bannerBookBtn h3 {
+    font-size: 1.05em;
+  }
+
+  .navigationBar {
+    flex-direction: column;
+    padding: 0;
+  }
+  .navigationBar .navItem {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .navigationBar .navItem h2 {
+    font-size: 1em;
+  }
+}
 .about-us {
   width: 80%;
   margin: 0 auto;
@@ -232,12 +320,12 @@ body header {
 }
 
 .servicesText {
-  padding: 40px 8% 50px 8%;
+  padding: 20px 8% 50px 8%;
 }
 .servicesText h1 {
-  color: #9c423b;
-  font-weight: 500;
-  font-size: 1.8em;
+  color: #AF473C;
+  font-weight: 400;
+  letter-spacing: 6px;
 }
 .servicesText p {
   font-size: 1.1em;
@@ -705,50 +793,6 @@ body header {
     display: none;
   }
 }
-<<<<<<< HEAD
-.testTitle h1 {
-  font-size: 1.5em;
-  color: #9c423b;
-  margin: 10px 10px 0px 6%;
-  padding: 20px 20px 20px 20px;
-  width: 160px;
-  border-bottom: 5px solid #9c423b;
-}
-
-.testQuoteImage {
-  display: flex;
-  flex-direction: column;
-  height: 250px;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-  background-image: linear-gradient(to bottom right, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)), url("/root/img/testimonials_quoteBackground.jpg");
-  background-size: cover;
-  border-bottom: 5px solid #9c423b;
-}
-.testQuoteImage .quoteQ {
-  font-size: 1.5em;
-  padding: 50px;
-  color: white;
-  text-shadow: black 1px 1px 3px;
-}
-.testQuoteImage .quoteP {
-  font-size: 1em;
-  color: white;
-}
-
-.testBox .revBox {
-  margin: 30px;
-}
-.testBox .revBox .revContent {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.testBox .revBox .revContent .profile {
-  width: 100px;
-  padding: 15px 15px 0px 15px;
-=======
 .mainFont {
   font-family: "Montserrat", sans-serif;
 }
@@ -842,6 +886,37 @@ body header {
     height: 180px;
   }
 }
+.quoteSliderBox {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/root/img/homeQuoteBanner.jpg");
+  height: 220px;
+  background-size: cover;
+  padding: 50px;
+}
+.quoteSliderBox .quoteSlider h3 {
+  color: white;
+  font-size: 1.45em;
+  font-weight: 300;
+  text-align: center;
+}
+.quoteSliderBox .quoteSlider .quoteDivider {
+  width: 200px;
+}
+.quoteSliderBox .quoteSlider .quoteName {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.quoteSliderBox .quoteSlider .quotecompany {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.quoteSliderBox .quoteSlider .slick-active {
+  color: white;
+}
+
 .partners {
   display: none;
   width: 80%;
@@ -893,7 +968,51 @@ body header {
   .heading_one {
     font-size: 80%;
   }
->>>>>>> f98a52858f7ee7109827cd9ad665f673351f1e06
+}
+.testTitle h1 {
+  color: #AF473C;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  font-weight: 400;
+  margin: 10px 10px 0px 6%;
+  padding: 20px 20px 20px 20px;
+  width: 80%;
+}
+
+.testQuoteImage {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-image: linear-gradient(to bottom right, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)), url("/root/img/testimonials_quoteBackground.jpg");
+  background-size: cover;
+  border-bottom: 5px solid #9c423b;
+}
+.testQuoteImage .quoteQ {
+  font-size: 1.5em;
+  padding: 50px;
+  color: white;
+  text-shadow: black 1px 1px 3px;
+}
+.testQuoteImage .quoteP {
+  font-size: 1em;
+  color: white;
+}
+
+.testBox .revBox {
+  margin: 30px;
+}
+.testBox .revBox .revContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.testBox .revBox .revContent .profile {
+  width: 100px;
+  padding: 15px 15px 0px 15px;
 }
 .testBox .revBox .revContent .profile .profilePic {
   width: 100px;
